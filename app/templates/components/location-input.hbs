@@ -1,11 +1,13 @@
 
-<form class="form-group" {{action "getLocation" on="submit"}}>
+<form class="form-group" {{action "getLocation"}}>
 
 {{input type="text"
         value=location
-        placeholder="Location"
+        placeholder="Zip Code OR City Name"
         id="location"
         class="location-input"
 }}
 
+
+<button type="submit" class="btn btn-primary">Submit</button>
 </form>

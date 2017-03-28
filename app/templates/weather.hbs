@@ -1,7 +1,20 @@
-<div class="weather-show">
-  <h3>Location: {{model.name}}</h3>
-  <h4>Weather Condition: {{model.weather.firstObject.main}} </h4>
-  <h4>Current Temperature: {{temp-convert model.main.temp}} °F</h4>
-</div>
+{{#if (test-location-exist model.name)}}
+  <div class="weather-show">
+    <h3>Location: {{model.name}}</h3>
+    <h4>Weather Condition: {{model.weather.firstObject.main}} </h4>
+    <h4>Current Temperature: {{temp-convert model.main.temp}} °F</h4>
+    {{#if (bring-umbrella model.weather.firstObject.main)}}
+      <h4>Comment: Bring Umbrella</h4>
+    {{/if}}
+    {{#if (bring-coat model.weather.firstObject.main)}}
+      <h4>Comment: Wear Coat, Be Warm</h4>
+    {{/if}}
+  </div>
+{{else}}
+  <div class="weather-show">
+    <h4>Unable to Track Location.</h4>
+    <h4>Please Try Again!</h4>
+  </div>
+{{/if}}
 
 {{#link-to 'locations' class="btn btn-primary"}}Change Location{{/link-to}}

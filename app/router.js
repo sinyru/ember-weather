@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('locations');
   this.route('weather', {path: '/locations/:weather'});
+  this.route('apparels');
 });
 
 export default Router;
