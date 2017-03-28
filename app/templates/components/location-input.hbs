@@ -1,5 +1,5 @@
 
-<form class="form-group" {{action "getLocation"}}>
+<form class="form-group" {{action "getLocation" on="submit"}}>
 
 {{input type="text"
         value=location
@@ -8,6 +8,6 @@
         class="location-input"
 }}
 
-
 <button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
