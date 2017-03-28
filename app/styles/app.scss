@@ -1,2 +1,58 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+// body {
+//     background-color: #6b92b9;
+//     background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
+//     -webkit-animation: snow 20s linear infinite;
+//     -moz-animation: snow 20s linear infinite;
+//     -ms-animation: snow 20s linear infinite;
+//     animation: snow 20s linear infinite;
+// }
+
+.weather-show {
+  border: 6px solid blue;
+  border-radius: 10px;
+  padding: 0 20px 20px 20px;
+  width: 370px;
+  background: white;
+  margin: 0 0 0 0;
+}
+
+.location-input {
+  width: 40%;
+  border: 2px solid;
+}
+
+// @-webkit-keyframes snow {
+//     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+//     50% { background-color: #b4cfe0 }
+//     100% {
+//         background-position: 500px 1000px, 400px 400px, 300px 300px;
+//         background-color: #6b92b9;
+//     }
+// }
+// @-moz-keyframes snow {
+//     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+//     50% { background-color: #b4cfe0 }
+//     100% {
+//         background-position: 500px 1000px, 400px 400px, 300px 300px;
+//         background-color: #6b92b9;
+//     }
+// }
+// @-ms-keyframes snow {
+//     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+//     50% { background-color: #b4cfe0 }
+//     100% {
+//         background-position: 500px 1000px, 400px 400px, 300px 300px;
+//         background-color: #6b92b9;
+//     }
+// }
+// @keyframes snow {
+//     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+//     50% { background-color: #b4cfe0 }
+//     100% {
+//         background-position: 500px 1000px, 400px 400px, 300px 300px;
+//         background-color: #6b92b9;
+//     }
+// }

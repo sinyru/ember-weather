@@ -1,2 +1,11 @@
-<label for="location">Location</label>
-{{model}}
+
+<form class="form-group" {{action "getLocation" on="submit"}}>
+
+{{input type="text"
+        value=location
+        placeholder="Location"
+        id="location"
+        class="location-input"
+}}
+
+</form>

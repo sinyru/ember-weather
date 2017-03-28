@@ -11,6 +11,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('locations');
+  this.route('weather', {path: '/locations/:weather'});
 });
 
 export default Router;

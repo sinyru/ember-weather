@@ -1,0 +1,7 @@
+<div class="weather-show">
+  <h3>Location: {{model.name}}</h3>
+  <h4>Weather Condition: {{model.weather.firstObject.main}} </h4>
+  <h4>Current Temperature: {{model.main.temp}} Kelvin</h4>
+</div>
+
+{{#link-to 'locations' class="btn btn-primary"}}Change Location{{/link-to}}

@@ -1,8 +1,19 @@
 import Ember from 'ember';
+import RSVP from 'rsvp';
+
 
 export default Ember.Route.extend({
-  ajax: Ember.inject.service(),
-  model (params) {
-      return this.get('ajax').request("/weathers/boston");
+  weather: Ember.inject.service(),
+  actions: {
+    getLocation(location) {
+      return this.get('weather').getWeather(location)
+      .then((data)=>{
+
+        return this.transitionTo('weather', data);
+      })
+      ;
+    },
+
   }
+
 });
