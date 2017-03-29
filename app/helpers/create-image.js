@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export function createImage(params) {
-  let getUrl=`http://openweathermap.org/img/w/${params}.png`;
+  let getUrl=`https://openweathermap.org/img/w/${params}.png`;
 
   return getUrl;
 }
