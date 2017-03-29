@@ -1,5 +1,21 @@
 <label for="ati">Type</label>
-{{input type="text"
-        id="ati"
-        placeholder="Type of Clothing"
-        value=ati}}
+
+<div {{action "atiToggled" "Coat"}}>
+  Coat
+{{input
+  type="radio"
+  value=ati
+  name="kind"
+}}
+
+</div>
+
+<div {{action "atiToggled" "Jacket"}}>
+  Jacket
+{{input
+  type="radio"
+  value=ati
+  name="kind"
+}}
+
+</div>

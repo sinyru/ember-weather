@@ -1,15 +1,16 @@
 <h1>My Apparels</h1>
 
+
 <table class="apparel-table">
   <tr>
-    <th class="apparel-type">Type</th>
-    <th class="apparel-name">Description</th>
+    <th class="apparel-type"> Type </th>
+    <th class="apparel-name"> Description </th>
   </tr>
-
     {{#each model as |apparel|}}
     <tr>
       <td class="apparel-type">{{apparel.clothingType}}</td>
       <td class="apparel-name">{{apparel.name}}</td>
+      <button class="btn btn-danger btn-xs d-btn" {{action "delete" apparel.id}}>Delete</button>
     </tr>
     {{/each}}
 </table>

@@ -10,11 +10,16 @@
 //     animation: snow 20s linear infinite;
 // }
 
+.d-btn{
+  margin: 5px;
+  border: 2px solid black;
+}
+
 .apparel-table{
   width: 50%;
 }
 
-table, th, td {
+th, td {
     border: 2px solid blue;
     padding: 3px;
     background: white;
