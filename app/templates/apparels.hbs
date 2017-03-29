@@ -1,18 +1,20 @@
 <h3>My Apparels</h3>
-
-
-<table class="apparel-table">
-  <tr>
-    <th class="apparel-type"> Type </th>
-    <th class="apparel-name"> Description </th>
-  </tr>
-    {{#each model as |apparel|}}
+{{log model.length}}
+{{#if (test-apparel model.length)}}
+  <table class="apparel-table">
     <tr>
-      <td class="apparel-type">{{apparel.clothingType}}</td>
-      <td class="apparel-name">{{apparel.name}}</td>
-      <button class="btn btn-danger btn-xs d-btn" {{action "delete" apparel.id}}>Delete</button>
+      <th class="apparel-type"> Type </th>
+      <th class="apparel-name"> Description </th>
     </tr>
-    {{/each}}
-</table>
-
+      {{#each model as |apparel|}}
+      <tr>
+        <td class="apparel-type">{{apparel.clothingType}}</td>
+        <td class="apparel-name">{{apparel.name}}</td>
+        <button class="btn btn-danger btn-xs d-btn" {{action "delete" apparel.id}}>Delete</button>
+      </tr>
+      {{/each}}
+  </table>
+{{else}}
+  <h4>You have nothing currently!</h4>
+{{/if}}
 {{#link-to 'apparel' class="btn btn-primary"}}Create Apparel{{/link-to}}

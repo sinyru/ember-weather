@@ -18,6 +18,10 @@ export default Ember.Route.extend({
         },
       })
       .then(()=>this.transitionTo('apparels'))
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('There was a problem. Are you sure you fill in everything?');
+      })
       ;
     }
   }
