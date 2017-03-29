@@ -1,6 +1,13 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
+h1 {
+  text-align: center;
+}
+
+.ati-radio{
+  margin: 0 0 0 0;
+}
 // body {
 //     background-color: #6b92b9;
 //     background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
@@ -17,6 +24,19 @@
 
 .apparel-table{
   width: 50%;
+}
+
+.apparel-type-input, .apparel-name-input, .apparel-submit-input{
+  margin: 0 0 0 10%;
+}
+
+.ani{
+  width: 50%;
+  border: 2px solid black;
+}
+
+.apparel-label{
+  font-size: 20px;
 }
 
 th, td {
