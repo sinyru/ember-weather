@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/ember-weather';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://fierce-bayou-10778.herokuapp.com/';
+    ENV.apiHost = 'https://fierce-bayou-10778.herokuapp.com';
   }
 
   return ENV;
