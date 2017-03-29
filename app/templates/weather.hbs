@@ -1,7 +1,10 @@
 {{#if (test-location-exist model.name)}}
   <div class="weather-show">
     <h3>Location: {{model.name}}</h3>
-    <h4>Weather Condition: {{model.weather.firstObject.main}} </h4>
+    <h4>
+      Weather Condition: {{model.weather.firstObject.main}}
+      <img src={{create-image model.weather.firstObject.icon }} alt="some_text" style="width:width;height:height;">
+    </h4>
     <h4>Current Temperature: {{temp-convert model.main.temp}} °F</h4>
     {{#if (bring-umbrella model.weather.firstObject.main)}}
       <h4>Comment: Bring Umbrella</h4>
