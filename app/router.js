@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('locations');
   this.route('weather', {path: '/locations/:weather'});
   this.route('apparels');
+  this.route('apparel', {path: '/apparels/apparel'});
 });
 
 export default Router;
