@@ -1,6 +1,15 @@
 {{apparel-name ani=apparel.name}}
 {{apparel-type ati=apparel.clothingType}}
 
-<button type="submit" class="btn btn-primary" {{action "create"}}>
-  Submit
+<button class="apparel-submit-input"
+        type="submit"
+        class="btn btn-primary"
+        {{action "create"}}>
+        Submit
 </button>
+
+{{#link-to 'apparels'
+           class="apparel-submit-input"
+           class="btn btn-danger"
+}}Cancel
+{{/link-to}}

@@ -1,21 +1,43 @@
-<label for="ati">Type</label>
 
-<div {{action "atiToggled" "Coat"}}>
-  Coat
-{{input
-  type="radio"
-  value=ati
-  name="kind"
-}}
+<div class="apparel-type-input">
 
-</div>
+  <label class="apparel-label">Type:</label>
+  <br>
 
-<div {{action "atiToggled" "Jacket"}}>
-  Jacket
-{{input
-  type="radio"
-  value=ati
-  name="kind"
-}}
+  <h4>Coat</h4>
+  {{input click=(action "atiToggled" "Coat")
+    type="radio"
+    value=ati
+    name="kind"
+    class="ati-radio"
+  }}
+  <br>
+
+  <h4>Jacket</h4>
+  {{input click=(action "atiToggled" "Jacket")
+    type="radio"
+    value=ati
+    name="kind"
+    class="ati-radio"
+  }}
+  <br>
+
+  <h4>Shirt</h4>
+  {{input click=(action "atiToggled" "Shirt")
+    type="radio"
+    value=ati
+    name="kind"
+    class="ati-radio"
+  }}
+  <br>
+
+  <h4>Sweater</h4>
+  {{input click=(action "atiToggled" "Sweater")
+    type="radio"
+    value=ati
+    name="kind"
+    class="ati-radio"
+  }}
+  <br>
 
 </div>
