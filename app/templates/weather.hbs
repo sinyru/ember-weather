@@ -13,6 +13,7 @@
     {{#if (bring-coat model.weather.firstObject.main)}}
       <h4>Comment: Wear Coat, Be Warm</h4>
     {{/if}}
+    {{#link-to 'random' class="btn btn-danger"}}Choice of the Day!{{/link-to}}
   </div>
 {{else}}
   <div class="weather-show">
@@ -20,5 +21,6 @@
     <h4>Please Try Again!</h4>
   </div>
 {{/if}}
+
 
 {{#link-to 'locations' class="btn btn-primary"}}Change Location{{/link-to}}

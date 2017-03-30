@@ -1,0 +1,15 @@
+<div class="center-stuff">
+
+{{#if (test-location-exist model.name)}}
+  <h2>Random Choice of the Day!</h2>
+  <h3>
+    {{model.name}}
+    {{model.clothingType}}
+  </h3>
+{{else}}
+  <h2>You currently have no clothes to wear!</h2>
+  <h3>Add some clothing in the apparel section</h3>
+{{/if}}
+{{#link-to 'locations' class="btn btn-primary"}}Back to Search Location{{/link-to}}
+
+</div>
