@@ -14,6 +14,7 @@ Router.map(function () {
   this.route('apparels');
   this.route('apparel', {path: '/apparels/apparel'});
   this.route('random');
+  this.route('page-not-found', { path: '/*wildcard' });
 });
 
 export default Router;
