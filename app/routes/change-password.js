@@ -1,18 +1,13 @@
 import Ember from 'ember';
+import RSVP from 'rsvp';
 
 export default Ember.Route.extend({
   auth: Ember.inject.service(),
   flashMessages: Ember.inject.service(),
-
+  isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
 
   model () {
-     if (this.get('isAuthenticated')) {
-       return this.get('store').findAll('dataset');
-     } else {
-       this.transitionTo('sign-in');
-       this.get('flashMessages')
-       .danger('Please sign in to view this page.');
-     }
+      return this.get('store').findAll('apparel');
    },
 
   actions: {
