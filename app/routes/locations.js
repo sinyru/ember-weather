@@ -5,7 +5,9 @@ import RSVP from 'rsvp';
 export default Ember.Route.extend({
   weather: Ember.inject.service(),
   model () {
-      return this.get('store').findAll('apparel');
+      return this.get('store').findAll('apparel')
+      .then(()=>RSVP.Promise.resolve({}))
+      ;
   },
 
   actions: {
